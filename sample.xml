@@ -21,4 +21,7 @@ Change the sourceType to JSON Schema if using schema instead of json.
 	 </executions>
 </plugin>
 
+Add the json files into /src/main/resources/schema directory.
+
+Run
 mvn generate-sources
