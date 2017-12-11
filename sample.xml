@@ -1,18 +1,24 @@
-			 <plugin>
-				 <groupId>org.jsonschema2pojo</groupId>
-				 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-				 <version>0.4.34</version>
-				 <configuration>
-				 <sourceDirectory>${project.basedir}/src/main/resources/schema</sourceDirectory>
-				 <targetPackage>com.ca.sso.policydata.api.fed.objects</targetPackage>
-				 <useCommonsLang3>true</useCommonsLang3>
-				 <sourceType>JSON</sourceType>
-				 </configuration>
-				 <executions>
-				 <execution>
-				 <goals>
-				 <goal>generate</goal>
-				 </goals>
-				 </execution>
-				 </executions>
-			</plugin>
+For generating java classes from json or json schema; Add following plugin into pom.xml
+
+Change the sourceType to JSON Schema if using schema instead of json.
+
+<plugin>
+	 <groupId>org.jsonschema2pojo</groupId>
+	 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+	 <version>0.4.34</version>
+	 <configuration>
+	 <sourceDirectory>${project.basedir}/src/main/resources/schema</sourceDirectory>
+	 <targetPackage>com.ca.sso.policydata.api.fed.objects</targetPackage>
+	 <useCommonsLang3>true</useCommonsLang3>
+	 <sourceType>JSON</sourceType>
+	 </configuration>
+	 <executions>
+	 <execution>
+	 <goals>
+	 <goal>generate</goal>
+	 </goals>
+	 </execution>
+	 </executions>
+</plugin>
+
+mvn generate-sources
