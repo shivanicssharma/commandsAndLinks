@@ -8,7 +8,7 @@ Change the sourceType to JSON Schema if using schema instead of json.
 	 <version>0.4.34</version>
 	 <configuration>
 	 <sourceDirectory>${project.basedir}/src/main/resources/schema</sourceDirectory>
-	 <targetPackage>com.ca.sso.policydata.api.fed.objects</targetPackage>
+	 <targetPackage>com.xx.yy.api.objects</targetPackage>
 	 <useCommonsLang3>true</useCommonsLang3>
 	 <sourceType>JSON</sourceType>
 	 </configuration>
